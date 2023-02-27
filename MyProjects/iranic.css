@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color:black;
+    background: aquamarine;
+    font-size: large ;
+    padding: 0 12px;
+    border-right: solid;
+
+ }/*Link styles*/
+a{
+    text-decoration: none;
+    color: black
+}
+a:hover{
+    color: crimson;
+}
+/* section styles*/
+.main-nav{
+    width: 100%;
+    background: rgb(174, 199, 199);
+    min-height:30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+}
+ .nav{
+display: flex;
+justify-content: space-around;
+font-weight: 700;
+list-style: none;
+margin: 0 auto;
+padding-left: 0;
+}
+.name{
+display: none;
+font-weight: bolder;
+letter-spacing: 10px;
+}
+ul{
+list-style: none;
+}
+.nav a{
+transition: all;
+}
+.nav a:hover{
+color: darkmagenta;
+}
+
+header{
+text-align: center;
+ background-image: url('/images/sunset.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
+
+}
+.profile-image{
+margin-top: 50px;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+border: 3px solid hotpink;
+transition: all.5s;
+}
+.profile-image:hover{
+transform: scale(1.2) rotate(360deg);
+}
+
+.tag{
+background-color: hotpink;
+color: lawngreen;
+padding: 10px;
+display: table;
+border-radius: 5px;margin: 10px auto;
+}
+.location{
+background-color: paleturquoise;
+color:olivedrab;
+}
+
+
+.card-title{
+text-align: center;
+border: solid blue 3px;
+border-radius:50% ;
+padding: 0px;
+width: 30%;
+margin-left: 40%;
+margin-top: 0px;
+}
+
+
+/*main{
+padding-top: 20px;
+}*/
+.copyright{
+font-size: 1.3em;
+max-width: 1200px;
+margin: 40px auto;
+}
+
+a.twitter{
+
+}
+.skills li{
+border-radius: 6px;
+display: inline-block;
+background: olive;
+color: white;
+padding: 5px 10px;
+margin: 2px;
+}
+
+/*media Queries*/
+@media (max-width: 960px){
+body{
+    background: forestgreen;
+}
+p{
+    color: fuchsia;
+}
+.wrap{
+    min-height: 100vh;
+}
+
+
+}
+
+@media (max-width: 480px) {
+body{
+    background: purple;
+}
+}
+@media ( min-width: 481px) and (max-width:700px){
+    body{
+        background: yellow;
+    }
+    p{
+        color: red;
+    }
+}
+
+
+
+
+
+
+

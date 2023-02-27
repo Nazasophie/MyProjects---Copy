@@ -1,0 +1,357 @@
+
+*{
+    color: black; 
+    box-sizing: border-box;
+ }
+  
+ body { background-color:#333;
+  text-align: center;
+ }
+
+ /* Responsive navigation with centered logo*/
+.container {
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+            align-items: center;
+    background: #111;
+    margin: 25px 0;
+    box-shadow: 0 5px 15px -10px #111;
+  }
+  
+  .logo {
+    -webkit-box-ordinal-group:2;
+    order: 1;
+    padding: 10px; 
+
+ /*backgroundlogo: #4382d6;*/
+ background-image: 
+ url(/images/irenic.PNG) ;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ font-size: 30px;
+ width: 250px;
+ height: 100px;
+ border-radius: 50%;
+ border: 2px solid;
+
+    line-height: 32px;
+   transition:all .5s;
+  }
+  .item {
+    color: rgba(255, 255, 255, 0.88);
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 24px;
+  }
+  .item:hover{
+      color: #fff;
+      background: rgba(255, 255, 255, 0.15);
+
+  }
+  .item:nth-of-type(n+4) {
+    -webkit-box-ordinal-group: 3;
+            order: 2;
+  }
+
+  @media all and (max-width: 800px) {
+    .container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: stretch;
+              align-items: stretch;
+    }
+   
+    .logo {
+      -webkit-box-ordinal-group: 1;
+              order: 0;
+      text-align: center;
+      width: 100px;
+      margin: auto auto 20px;
+    }
+   
+    .item {
+      text-align: center;
+      border-bottom: 1px solid #111;
+    }
+  }
+  
+
+
+/*footer*/
+
+.main-footer{
+    text-align: center;
+    padding: 2sem 0;
+    background: rebeccapurple;
+    margin-top: 100%;
+    margin-bottom: 0;
+}
+
+/*decoration for irenic touche h1 class-shadow*/
+h1{
+    font-size: 60px;
+    margin-top:20px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    text-shadow: 5px 8px 10px yellowgreen;
+    
+}
+/*Link styles*/
+a{
+    text-decoration: underline;
+    
+}
+
+
+
+/* link-stlye and footer link @ telephone*/
+a:hover{
+    color:plum;
+}
+a:visited{ 
+    color: royalblue;
+}
+a:active{
+    color: purple;
+}
+
+
+
+img{
+    border-radius: 200%;
+    image-rendering: pixelated;
+
+    }
+
+/*clear float*/
+
+
+.column{
+    float: left;
+    width: 30.33%;
+    padding: 2px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.group{
+    width: 20.50px;
+    margin-right: 20px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*auto slider outer to customize its size(max-width)
+bacground and shadow*/
+
+.auto-slider{
+    position: relative;
+    box-sizing: content-box;
+    display: inline-block;
+    padding:  10px 10px 20px;
+    background:black;
+    max-width: 720px;
+    margin-top: 10% ;
+    margin-left: 10px;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px blue;
+}
+
+div#slider {overflow: hidden;}
+div#slider figure img
+ {width: 20%; float: left;}
+div#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 25s sliding ease infinite;
+}
+
+/*slider indicator*/
+.indicator{
+    width: 95%;
+    max-width: 720px;
+    height: 4px;
+    background: lightblue;
+    position: absolute;
+    bottom: 0;
+    animation: indicating 5s ease infinite;
+
+}
+/* css animation that automatic play the slider*/  
+
+@keyframes sliding{
+    0%{left: 0%; }
+    20%{left: -100%;}
+    40%{left: -200%;}
+    60%{left: -300%;}
+    80%{left: -400%;}
+    100%{left: 0%;}
+}        
+
+
+@keyframes indicating {
+    from{
+        left: -100%;
+    }
+        to{
+        left: 0;
+        }
+}
+
+/*3D cube image rotator*/
+
+.scene {
+    -webkit-perspective: 800px;
+            perspective: 800px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;;
+   background: url(/images/irenic.PNG);
+    background-size: 100% 100%;
+    background-position:center ;
+    background-repeat: no-repeat;
+    
+}
+
+.scene:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.scene:hover.side{
+    opacity: 7;
+}
+
+.cube {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    -webkit-animation: rotate 10s ease-in-out infinite;
+            animation: rotate 10s ease-in-out infinite;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+
+
+.side{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background:url(/images/irenic.PNG);
+    opacity: .95;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*transform the backside of the cube 
+and set a background image for this side*/
+
+.back{
+    -webkit-transform: translateZ(-150px) rotateX(180deg);
+          transform: translateZ(-150px) rotateX(180deg);
+      background-image: url(/images/Mgirl.JPG);
+}
+
+/*style the left,right,top,bottom
+and front side of the cube*/
+
+.left{
+    -webkit-transform: translateX(-150px) rotateY(90deg);
+          transform: translateX(-150px) rotateY(90deg);
+      background-image: url(/images/irenic.PNG);
+  
+}
+
+.right{
+    -webkit-transform: translateX(150px) rotateY(90deg);
+    transform: translateX(150px) rotateY(90deg);   
+background-image: url(/images/NPXI4776.JPG);
+
+}
+
+.top{
+    -webkit-transform: translateY(-150px) rotateX(90deg);
+    transform: translateY(-150px) rotateX(90deg);  
+ background-image: url(/images/teeth.JPG);
+  
+}
+
+.bottom{
+    -webkit-transform: translateY(150px) rotateX(270deg);
+    transform: translateY(150px) rotateX(270deg);  
+background-image: url(/images/legs.JPG);
+  
+}
+.front{
+    -webkit-transform: translateZ(150px);
+    transform: translateZ(150px);
+    background-image: url(/images/toucheMas.JPG);
+}
+
+
+/*css3 keyframe for cube rotation animation*/
+
+@keyframes rotate {
+        0% {
+          -webkit-transform: rotateX(0);
+                  transform: rotateX(0);
+        }
+        12.5% {
+          -webkit-transform: rotateY(90deg);
+                  transform: rotateY(90deg);
+        }
+        25% {
+          -webkit-transform: rotateY(270deg);
+                  transform: rotateY(270deg);
+        }
+        37.5% {
+          -webkit-transform: rotateY(270deg);
+                  transform: rotateY(270deg);
+        }
+        50% {
+          -webkit-transform: rotateY(360deg);
+                  transform: rotateY(360deg);
+        }
+        62.5% {
+         -webkit-transform: rotateX(90deg);
+             transform: rotateX(90deg);
+                  }
+                  75% {
+                    -webkit-transform: rotateX(180deg);
+                            transform: rotateX(180deg);
+                  }
+                  87.5% {
+                    -webkit-transform: rotateX(270deg);
+                            transform: rotateX(270deg);
+                  }
+                  100% {
+                    -webkit-transform: rotateX(360deg);
+                            transform: rotateX(360deg);
+                  }
+                
+        }
+
+
+
+
+
+

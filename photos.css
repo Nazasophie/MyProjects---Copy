@@ -1,0 +1,248 @@
+/*@import "/import-styles.css";*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: black;
+    margin: 0 auto;
+    font-size: 100%;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1{
+    font-size: 60px;
+    margin-top:20px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    text-shadow: 5px 8px 10px yellowgreen;
+  
+
+}
+h2{
+    font-size: 53px;
+    color: blue;
+    display: inline;
+    text-decoration: underline;
+    margin-bottom: .5em;
+} 
+
+
+/*img{
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius:10px;
+}*/
+
+
+.main-header{
+    padding-top: 170px;
+    height: 850%;
+   background-image: url('/images/sunset.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+}
+
+header span{
+    color: white;
+    font-size: 1.625;
+    letter-spacing: .065em;
+    font-weight: 200;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+
+}
+ul{
+    list-style: none;
+    background-color: lavender;
+    color: black;
+    margin-bottom: 5px;
+}
+    
+    .main-nav{
+    width: 50%;
+    min-height:30px;
+    position: fixed;
+    text-align: center;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style: none;
+    margin-left: 40%;
+    margin-top: 5pxs;
+    padding: 10px;
+    
+}
+
+li{
+    list-style-type: "\27A1";
+}
+
+.primary-content,
+.secondary-content{
+    width: 65%;
+    margin: auto;
+    max-width: 900px;
+
+}
+
+
+.primary-content,
+.main-header
+{
+    text-align: center;
+}
+.secondary-content{
+margin-top: 20px;  
+padding-bottom: 50px; 
+}
+
+
+/*PSEUDO selector*/
+a:link{
+    color: red;
+    display: block;
+}
+
+a:visited{
+    color: orange;
+}
+
+a:hover{
+    color: forestgreen;
+}
+
+a:active{
+    color: hotpink;
+}
+a:focus{
+    color: lawngreen;
+    background-color: lightpink;
+}
+.wildlife{
+    color: black;
+    padding: 10% 10%;
+    border-top: 10px solid 
+    blue;
+    margin-left: 15%;
+     background-image: url(/images/IMG_20181112_083720.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 50px 10px palevioletred;
+    
+    border-radius: 150% 30px;
+       
+
+}
+
+
+
+.callout{
+    font-size: 1.25em;
+    border-bottom: 3px solid;
+    padding: 0 9px 3px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.resorts,
+.tips{
+    width: 46.5%;
+}
+.tips{
+    float:left;
+    
+} 
+.resorts{
+    float: right;
+}
+/*float clefix*/
+.group:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.main-footer{
+    text-align: center;
+
+}
+
+
+/*media Queries*/
+
+@media (max-width:1024px) {
+.primary-content,
+.secondary-content{
+    width: 90%;
+}
+.wrap{
+    min-height: 100vh;
+}
+
+
+.wildlife{
+    padding: 10% 12%;
+    margin: 50px 0 20px;
+}
+}
+@media (max-width:768px) {
+    .primary-content,
+    .secondary-content{
+        width: 100%;  
+        padding: 20px;
+        border-top: none;
+    }
+    .main-header{
+        max-height: 380px;
+        padding: 50px 25px 0;
+
+    }
+    .title{
+        font-size: 1.3rem;
+        border: none;
+    }
+
+    h1{
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+    .resorts,
+    .tips{
+      float: none; 
+      width: 100%; 
+    }
+    .main-footer{
+        padding: 20px 0;
+    }
+}@media (max-width: 960px){
+    body{
+        background: forestgreen;
+    }
+    p{
+        color: fuchsia;
+    }
+}
+
+@media (max-width: 200px) {
+    body{
+        background: yellow;
+    }
+     
+    }
+   

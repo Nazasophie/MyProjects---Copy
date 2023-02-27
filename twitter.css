@@ -1,0 +1,98 @@
+body{
+    
+   background-color:grey;
+   /* background-color: green;width: 300px; height: 100px;
+    position:absolute; top:0px;left: 120px;z-index: 3;
+
+background-color: red; width: 300px; height: 100px;
+position: absolute; top: 40px; left: 80px; z-index: 2;
+
+background-color: yellow; width: 300px;height: 100px;
+position: absolute;top: 40px;left: 80px;z-index: 1;*/
+}
+
+
+.twitter{
+    margin-bottom: 10%;
+    width: 60%;
+    display: inline-block;
+} 
+.moon{
+    margin-right: 50%;
+}
+.heart{
+    margin-left: 20%;
+}
+
+header{
+    font-size: large;
+    margin-bottom: 5px;
+    margin-left: 40%;
+    text-emphasis: triangle red;
+    -webkit-text-emphasis:triangle red;
+}
+
+
+.heart{
+    position: relative;
+    height: 160px;
+    width: 100px;
+    background-color: red;
+    border-radius: 200px 200px 0 0;
+    transform: rotate(-20deg);
+}
+
+.heart::before{
+    content:"" ;
+    position: absolute;
+    height: 160px;
+    width: 100px;
+    background-color: red;
+    border-radius:200px 200px 0 0;
+   transform: rotate(90deg);
+    left: 50px;
+    top:30px;
+    
+}
+
+.moon{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 22px 22px 0 0 yellow;
+    
+}
+#triangle{
+    height: 0;
+    width: 0;
+    border-bottom: 200px solid black;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+}
+
+
+h2:after{
+    content: '\2620';
+}
+p:after{
+    content: '\2614';
+}
+
+
+/*float and clefix columns*/
+.heart{
+    float:left;
+    
+} 
+.moon{
+    float: right;
+}
+/*float clefix*/
+.group:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+
+

@@ -1,0 +1,68 @@
+body{
+    position: relative;
+    background-color: blue;
+    
+}
+.twitter{
+    margin-left: 30%;
+    margin-bottom: 10%;
+}
+
+header{
+    font-size: large;
+    margin-bottom: 5%;
+    margin-left: 40%;
+    text-emphasis: triangle red;
+    -webkit-text-emphasis:triangle red;
+}
+/*h2{
+    background:blue url('https://picsum.photos/id/1015/200/300');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}*/
+h2:after{
+    content: '\2620';
+}
+p:after{
+    content: '\2614';
+}
+
+h2:after{
+    content: '\2620';
+}
+
+
+.heart{
+    position: relative;
+    height: 160px;
+    width: 100px;
+    background-color: red;
+    border-radius: 200px 200px 0 0;
+    transform: rotate(-20deg);
+}
+
+.heart::before{
+    content:"" ;
+    position: absolute;
+    height: 160px;
+    width: 100px;
+    background-color: red;
+    border-radius:200px 200px 0 0;
+   transform: rotate(90deg);
+    left:50px;
+    top:30px;
+    
+}
+
+.moon{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 22px 22px 0 0 yellow;
+    
+}
+
+ul{
+    list-style-type:"\27A1";
+}

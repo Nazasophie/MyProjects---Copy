@@ -1,0 +1,34 @@
+.babie{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-1{
+    background: #fec5e5;
+}
+.item-2{
+    background: hotpink;
+
+}
+
+.item-3{
+    background:#fdab9f ;
+}
+
+.item-4{
+    background: #fa86c4;
+}
+
+.item{
+    flex: 1 200px;
+}
+
+
+
+
+
+
+

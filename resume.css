@@ -1,0 +1,21 @@
+body  {
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+
+background-image: radial-gradient(circle,aqua 20%, pink 30%,dodgerblue 40% );
+} 
+
+
+h1{
+ background-color: aqua; 
+ margin:0;  
+}
+
+.section-title{
+    text-transform: uppercase;
+}
+li{
+    list-style: none;
+}
+
+

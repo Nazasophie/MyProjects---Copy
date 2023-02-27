@@ -1,0 +1,34 @@
+.babie{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-1{
+    background: moccasin;
+}
+.item-2{
+    background: gold;
+
+}
+
+.item-3{
+    background:magenta ;
+}
+
+.item-4{
+    background: aquamarine;
+}
+
+.item{
+    flex: 1 200px;
+}
+
+
+
+
+
+
+
